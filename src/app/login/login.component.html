@@ -1,0 +1,12 @@
+<h1>FirebaseUI-Angular Sample</h1>
+<firebase-ui (signInSuccessWithAuthResult)="successCallback($event)" (signInFailure)="errorCallback($event)">
+</firebase-ui>
+
+<!-- <ng-template [ngIf]="(signInSuccessWithAuthResult)='successCallback($event)'">
+    <div>Content to render when condition is
+        true.</div>
+</ng-template> -->
+
+
+<button (click)="logout()">Logout</button>
+<button [routerLink]="['/page']">To second page</button>
